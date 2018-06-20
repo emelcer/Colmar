@@ -1,3 +1,206 @@
-h1 {
-	color: blue;
+
+html {
+	font-size: 16px;
 }
+
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	display: inline;
+	padding-left: 1rem;
+}
+
+
+/* Header */
+
+header {
+	display: flex;
+	padding: 0 24px 0 24px;
+	height: 4rem;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	height: 2rem;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.logo img {
+	width: 3rem;
+	height: 3rem;
+}
+
+
+
+
+/* Main Banner */
+
+.main-banner {
+	display: flex;
+	background-color: lightgray;
+}
+
+.banner-image {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+.banner-image img {
+	width: 100%;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+}
+
+.banner-text p {
+	background-color: darkgray;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+
+/* Practice Info */
+
+.practice-info {
+	display: flex;
+}
+
+.section-left-column {
+	width: 60%;
+	padding: 2rem 1.5rem;
+}
+
+
+.section-left-column img {
+	width: 100%;
+}
+
+.section-right-column {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+}
+
+.right-column-item {
+	display: flex;
+	padding: 1rem;
+}
+
+
+.image-container {
+	width: 35%;
+	height: auto;
+	overflow: hidden;
+	padding-right: 1rem;
+}
+
+.right-column-item img {
+	width: 100%;
+
+}
+
+.item-description {
+	width: 65%;
+}
+
+.right-column-item h2 {
+
+}
+
+.right-column-item p {
+	
+}
+
+.right-column-item a {
+	
+}
+
+
+/*Courses*/
+
+.courses {
+	background-color: lightgray;
+}
+
+.courses h1 {
+	text-align: center;
+	padding-top: 2rem;
+	margin: 0;
+}
+
+.courses-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2rem 4.5rem;
+}
+
+.courses-item {
+	display: flex;
+	margin: 0 2rem 2rem 0;
+	flex-direction: column;
+	width: 30%;
+	background-color: white;
+}
+
+.courses-item img {
+	width: 100%;
+	height: auto;
+}
+
+.courses-text {
+	padding: 1rem;
+}
+
+.courses-subtitle {
+	padding: 0.5rem 0;
+} 
+
+
+/*thesis*/
+
+.thesis {
+	padding: 2rem 0;
+}
+
+.thesis h1 {
+	text-align: center;
+	margin: 0;
+}
+
+.thesis-container {
+	display: flex;
+}
+
+.thesis-container video {
+	width: 100%;
+}
+
+/*footer*/
+
+footer {
+	display: flex;
+	border-top: 1px solid gray;
+}
+
+footer p {
+	flex-grow: 1;
+}
+
+
+
+
+
+
