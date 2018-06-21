@@ -4,8 +4,8 @@ html {
 }
 
 body {
-	width: 90%;
 	margin: 0 auto;
+	font-family: Muli, sans-serif;
 }
 
 ul {
@@ -16,6 +16,21 @@ ul li {
 	display: inline;
 	padding-left: 1rem;
 }
+
+h1, h2, h3 {
+	color: #4d5154;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
 
 
 /* Header */
@@ -39,14 +54,22 @@ header {
 	height: 3rem;
 }
 
+.logo p {
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: #4d5154;
+}
 
+.logo p span {
+	font-weight: 400;
+}
 
 
 /* Main Banner */
 
 .main-banner {
 	display: flex;
-	background-color: lightgray;
+	background-color: #d0e4f4;
 }
 
 .banner-image {
@@ -62,12 +85,24 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center; 
+	width: 40%;
+	padding-left: 1.5rem;
 }
 
+.banner-text h1, h2 {
+	margin-bottom: 3rem;
+}
+
+
 .banner-text p {
-	background-color: darkgray;
+	background-color: #295475;
+	width: 10rem;
 	padding: 0.5rem;
+	border-radius: 3.5px;
+	font-size: 1.25rem;
 	text-align: center;
+	color: white;
+
 }
 
 
@@ -193,6 +228,9 @@ header {
 footer {
 	display: flex;
 	border-top: 1px solid gray;
+	padding: 0 24px 0 24px;
+	height: 4rem;
+	align-items: center;
 }
 
 footer p {
