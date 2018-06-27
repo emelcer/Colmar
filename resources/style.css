@@ -22,7 +22,6 @@ p {
 	font-weight: 300;
 }
 
-
 h1 {
 	font-size: 2.5rem;
 	font-weight: 900;
@@ -117,8 +116,6 @@ header {
 }
 
 
-
-
 /* Practice Info */
 
 .practice-info {
@@ -157,11 +154,9 @@ p.quote-source {
 	border-bottom: 1px solid #b2b2b2;
 }
 
-
 .right-column-item:nth-child(3) {
 	background-color: #d0e4f4;
 }
-
 
 .image-container {
 	width: 35%;
@@ -202,10 +197,6 @@ p.quote-source {
 	border-radius: 3.5px;
 	width: 6rem;
 	text-align: center;
-}
-
-.item-description a:hover {
-	color: #b1b5bc;
 }
 
 

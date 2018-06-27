@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Colmar Academy</title>
@@ -14,7 +14,7 @@
 
   	<!--Header-->
 
-  		<header>
+  		<header role="banner">
 
   			<div class="logo">
   				<img src="resources/media/ic-logo.svg" alt="lion colmar logo" />
@@ -23,7 +23,7 @@
 
 			<!--Nav-->
 
-			<nav>
+			<nav role="navigation">
 				<ul>
 					<li><a href="#">On Campus</a></li>
 					<li><a href="#">Online</a></li>
@@ -32,7 +32,7 @@
 				</ul>
 			</nav>
 
-      <nav class="mobile-nav">
+      <nav class="mobile-nav" role="navigation">
         <a href="#"><i class="fa fa-university fa-lg"></i></a>
 				<a href="#"><i class="fa fa-desktop fa-lg"></i></a>
 				<a href="#"><i class="fa fa-user fa-lg"></i></a>
@@ -43,10 +43,11 @@
 
   	<!--Main-->
 
+    <main role="main">
 
   		<!--Main Banner (Call to Action)-->
 
-  			<div class="main-banner">
+  			<section class="main-banner">
 
 	  			<div class="banner-image">
 	  				<img src="resources/media/banner.jpg" alt="students learning outside" />
@@ -61,14 +62,14 @@
 
 	  			</div>
 
-			</div>
+			  </section>
 
   		<!--Practice/info section-->
 
 
-  			<div class="practice-info">
+  			<section class="practice-info">
 
-  				<div class="section-left-column">
+  				<section class="section-left-column">
 
   					<img src="resources/media/information-main.jpg" alt="man reading" />
 
@@ -81,9 +82,9 @@
 
   					<p class="quote-source">Emanuel, Sr Strategist at Hiring.com</p>
 
-  				</div>
+  				</section>
 
-  				<div class="section-right-column">
+  				<aside class="section-right-column" role="complementary">
 
   					<div class="right-column-item">
 
@@ -131,14 +132,14 @@
 
   					</div>
 
-  				</div>
+  				</aside>
 
-  			</div>
+  			</section>
 
 
   		<!--Courses-->
 
-  			<div class="courses">
+  			<section class="courses">
 
   				<h1>Start learning</h1>
 
@@ -149,9 +150,9 @@
   						<img src="resources/media/course-software.jpg" alt="computer screens" />
 
   						<div class="courses-text">
-	  						<h2>Software engineering</h2>
-	  						<p class="courses-subtitle">COURSES</p>
-	  						<p class="courses-description">Web Development, Mobile Development, iOT, APIs</p>
+	  						<h2 aria-label="name of subject">Software engineering</h2>
+	  						<p class="courses-subtitle" >COURSES</p>
+	  						<p class="courses-description" aria-label="list of courses">Web Development, Mobile Development, iOT, APIs</p>
 	  					</div>
 
   					</div>
@@ -161,9 +162,9 @@
   						<img src="resources/media/course-computer-art.jpg" alt="hand holding smartphone" />
 
   						<div class="courses-text">
-	  						<h2>Computer art</h2>
+	  						<h2 aria-label="name of subject">Computer art</h2>
 	  						<p class="courses-subtitle">COURSES</p>
-	  						<p class="courses-description">Images &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+	  						<p class="courses-description" aria-label="list of courses">Images &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
 	  					</div>
 
   					</div>
@@ -173,9 +174,9 @@
   						<img src="resources/media/course-design.jpg" alt="hands holding old camera" />
 
   						<div class="courses-text">
-	  						<h2>Design</h2>
+	  						<h2 aria-label="name of subject">Design</h2>
 	  						<p class="courses-subtitle">COURSES</p>
-	  						<p class="courses-description">User Experience Design, User Research, Visual Design</p>
+	  						<p class="courses-description" aria-label="list of courses">User Experience Design, User Research, Visual Design</p>
 	  					</div>
 
   					</div>
@@ -185,9 +186,9 @@
   						<img src="resources/media/course-data.jpg" alt="charts on laptop" />
 
   						<div class="courses-text">
-	  						<h2>Data</h2>
+	  						<h2 aria-label="name of subject">Data</h2>
 	  						<p class="courses-subtitle">COURSES</p>
-	  						<p class="courses-description">Data Science, Big Data, SQL, Data Visualization</p>
+	  						<p class="courses-description" aria-label="list of courses">Data Science, Big Data, SQL, Data Visualization</p>
 	  					</div>
 
   					</div>
@@ -197,9 +198,9 @@
   						<img src="resources/media/course-business.jpg" alt="chess board" />
 
   						<div class="courses-text">
-	  						<h2>Business</h2>
+	  						<h2 aria-label="name of subject">Business</h2>
 	  						<p class="courses-subtitle">COURSES</p>
-	  						<p class="courses-description">Product Development, Business Development, Startup</p>
+	  						<p class="courses-description" aria-label="list of courses">Product Development, Business Development, Startup</p>
 	  					</div>
 
   					</div>
@@ -209,16 +210,16 @@
   						<img src="resources/media/course-marketing.jpg" alt="finger touching smartwatch" />
 
   						<div class="courses-text">
-	  						<h2>Marketing</h2>
+	  						<h2 aria-label="name of subject">Marketing</h2>
 	  						<p class="courses-subtitle">COURSES</p>
-	  						<p class="courses-description">Analytics, Content Marketing, Mobile Marketing</p>
+	  						<p class="courses-description" aria-label="list of courses">Analytics, Content Marketing, Mobile Marketing</p>
 	  					</div>
 
   					</div>
 
   				</div>
 
-  			</div>
+  			</section>
 
 
 
@@ -226,14 +227,14 @@
   		<!--Thesis Exhibit-->
 
 
-  			<div class="thesis">
+  			<section class="thesis">
 
 
   				<h1>Thesis Exhibit</h1>
 
   				<div class="thesis-container">
 
-  					<div class="section-left-column">
+  					<section class="section-left-column">
 
   	  					<video controls>
   	  						<source src="resources/media/thesis.mp4" type="video/mp4">
@@ -250,9 +251,9 @@
   	  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
   	  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-    			  </div>
+    			  </section>
 
-	  				<div class="section-right-column">
+	  				<aside class="section-right-column" role="complementary">
 
 	  					<div class="right-column-item">
 
@@ -282,17 +283,17 @@
 
 	  					</div>
 
-  					</div>
+  					</aside>
 
   				</div>
 
-  			</div>
+  			</section>
 
-
+    </main>
 
   	<!--Footer-->
 
-  		<footer>
+  		<footer role="contentinfo">
 
   			<p>&copy; 2016 Colmar Academy. All rights reserved</p>
 
