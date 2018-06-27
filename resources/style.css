@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0 auto;
 	font-family: Muli, sans-serif;
+	color: #40454f;
 }
 
 ul {
@@ -17,21 +18,30 @@ ul li {
 	padding-left: 1rem;
 }
 
-h1, h2, h3 {
-	color: #4d5154;
+p {
+	font-weight: 300;
 }
 
+
 h1 {
-	font-size: 4rem;
-	font-weight: 800;
+	font-size: 2.5rem;
+	font-weight: 900;
+	margin: 2rem 0;
 }
 
 h2 {
-	font-size: 2rem;
-	font-weight: 700;
+	font-size: 1.5rem;
+	font-weight: 600;
 }
 
+a {
+	text-decoration: none;
+	color: #40454f;
+}
 
+a:hover {
+	color: #b1b5bc;
+}
 
 /* Header */
 
@@ -61,7 +71,11 @@ header {
 }
 
 .logo p span {
-	font-weight: 400;
+	font-weight: 300;
+}
+
+.mobile-nav {
+	display: none;
 }
 
 
@@ -84,54 +98,68 @@ header {
 .banner-text {
 	display: flex;
 	flex-direction: column;
-	justify-content: center; 
+	justify-content: center;
 	width: 40%;
-	padding-left: 1.5rem;
+	padding: 0 1.5rem;
 }
 
-.banner-text h1, h2 {
-	margin-bottom: 3rem;
+.banner-text h2 {
+	margin-bottom: 2rem;
 }
 
-
-.banner-text p {
-	background-color: #295475;
+.banner-text a {
+	background-color: #d4e22f;
 	width: 10rem;
 	padding: 0.5rem;
 	border-radius: 3.5px;
 	font-size: 1.25rem;
 	text-align: center;
-	color: white;
-
 }
+
+
 
 
 /* Practice Info */
 
 .practice-info {
 	display: flex;
+	padding: 1rem 0;
 }
 
 .section-left-column {
 	width: 60%;
-	padding: 2rem 1.5rem;
+	padding: 2rem 1.5rem 1rem 1.5rem;
 }
-
 
 .section-left-column img {
 	width: 100%;
+}
+
+p.quote-source {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 0.85rem;
+	padding-top: 2rem;
+	color: #b1b5bc;
 }
 
 .section-right-column {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
-	padding-top: 1rem;
+	justify-content: space-between;
+	padding: 1rem 0;
 }
 
 .right-column-item {
 	display: flex;
 	padding: 1rem;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+
+.right-column-item:nth-child(3) {
+	background-color: #d0e4f4;
 }
 
 
@@ -144,23 +172,40 @@ header {
 
 .right-column-item img {
 	width: 100%;
+}
 
+.image-mobile {
+	display: none;
 }
 
 .item-description {
 	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.right-column-item h2 {
-
+.item-description h2 {
+	margin-bottom: 1rem;
+	font-weight: 700;
 }
 
-.right-column-item p {
-	
+.item-description p {
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	font-weight: 300;
 }
 
-.right-column-item a {
-	
+.item-description a {
+	background-color: #d1d845;
+	padding: 0.75rem;
+	border-radius: 3.5px;
+	width: 6rem;
+	text-align: center;
+}
+
+.item-description a:hover {
+	color: #b1b5bc;
 }
 
 
@@ -168,26 +213,29 @@ header {
 
 .courses {
 	background-color: lightgray;
+	padding: 2rem 0;
 }
 
 .courses h1 {
 	text-align: center;
-	padding-top: 2rem;
+	padding-bottom: 2rem;
 	margin: 0;
 }
 
 .courses-container {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 2rem 4.5rem;
+	margin: 0 auto;
+	justify-content: space-around;
 }
 
 .courses-item {
 	display: flex;
-	margin: 0 2rem 2rem 0;
 	flex-direction: column;
 	width: 30%;
+	min-width: 15rem;
 	background-color: white;
+	margin-bottom: 2rem;
 }
 
 .courses-item img {
@@ -196,12 +244,20 @@ header {
 }
 
 .courses-text {
-	padding: 1rem;
+	padding: 2rem;
 }
 
 .courses-subtitle {
 	padding: 0.5rem 0;
-} 
+}
+
+p.courses-subtitle {
+	padding: 1.5rem 0 0.8rem 0;
+}
+
+.courses-text p {
+	color: #888d96;
+}
 
 
 /*thesis*/
@@ -213,6 +269,7 @@ header {
 .thesis h1 {
 	text-align: center;
 	margin: 0;
+	padding: 1rem 0;
 }
 
 .thesis-container {
@@ -223,6 +280,24 @@ header {
 	width: 100%;
 }
 
+.thesis .right-column-item:first-child {
+	background-color: #d0e4f4;
+}
+
+.thesis .section-right-column {
+	justify-content: flex-start;
+	padding-top: 2rem;
+}
+
+.thesis-image-mobile {
+	display: none;
+}
+
+.thesis .section-left-column h2 {
+	padding: 1.5rem 0 1rem 0;
+	font-weight: 700;
+}
+
 /*footer*/
 
 footer {
@@ -231,14 +306,201 @@ footer {
 	padding: 0 24px 0 24px;
 	height: 4rem;
 	align-items: center;
+	font-size: 0.8rem;
 }
 
 footer p {
 	flex-grow: 1;
 }
 
+/*reshuffles practice-info's right column when it starts looking funny*/
+
+@media only screen and (max-width:1160px) {
+	.practice-info .section-left-column {
+		width: 50%;
+	}
+	.practice-info .section-right-column {
+		width: 50%;
+	}
+}
+
+/*tablet layout*/
+
+@media only screen and (max-width: 942px) {
+	.main-banner {
+		flex-direction: column;
+		padding-bottom: 2rem;
+	}
+	.banner-image {
+		width: 100%;
+		box-sizing: border-box;
+		height: 25rem;
+		overflow: hidden;
+	}
+	.main-banner .banner-text {
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.practice-info {
+		flex-direction: column;
+	}
+	.practice-info .section-left-column {
+		width: 100%;
+		margin: 0 auto;
+		padding: 1rem;
+    box-sizing: border-box;
+	}
+	.practice-info .section-right-column {
+		flex-direction: row;
+		width: 100%;
+	}
+	.practice-info .section-right-column .right-column-item {
+		flex-direction: column;
+		width: 30%;
+		border: none;
+	}
+	.practice-info .section-right-column .right-column-item .item-description {
+		justify-content: space-between;
+	}
+	.practice-info .section-right-column .right-column-item .image-container {
+		width: 100%;
+		padding: 0;
+		overflow: hidden;
+	}
+	.image-standard {
+		display: none;
+	}
+	.image-mobile {
+		display: block;
+	}
+	.item-description h2 {
+		margin-top: 1rem;
+	}
+	.item-description {
+		width: 100%;
+	}
+	.item-description p {
+		height: 2rem;
+	}
+
+	.courses-container {
+		padding: 1rem 3rem;
+	}
+	.thesis .right-column-item {
+		flex-direction: column;
+	}
+	.thesis .right-column-item .image-container {
+		width: 100%;
+	}
+	.thesis-image-standard {
+		display: none;
+	}
+	.thesis-image-mobile {
+		display: block;
+	}
 
 
+}
+
+/*nav changes to icons*/
+
+@media only screen and (max-width: 750px) {
+	.mobile-nav {
+		display: block;
+	}
+	.mobile-nav a {
+		margin-right: 0.75rem;
+	}
+	nav {
+		display: none;
+	}
+}
 
 
+/*mobile*/
 
+@media only screen and (max-width: 478px) {
+	.logo p, span {
+		display: none;
+	}
+	.mobile-nav a {
+		margin-right: 2rem;
+	}
+	.main-banner {
+		flex-direction: column;
+	}
+	.banner-image {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.banner-text {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+		padding: 1rem 1rem 2rem 1rem;
+	}
+	.banner-text h1 {
+		padding-bottom: 1rem;
+	}
+	.section-left-column {
+		display: none;
+	}
+	.practice-info .section-right-column {
+		width: 100%;
+		flex-direction: column;
+	}
+	.practice-info .section-right-column .right-column-item {
+		flex-direction: column;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	.image-container {
+		width: 100%;
+	}
+	.image-standard {
+		display: none;
+	}
+	.image-mobile {
+		display: block;
+	}
+	.item-description p {
+		height: auto;
+	}
+	.courses-item img, .courses-subtitle, .courses-description {
+		display: none;
+	}
+	.courses-text h2 {
+		margin: 0;
+		font-size: 1rem;
+	}
+	.courses-item {
+		margin-bottom: 0.5rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	.courses h1 {
+		padding: 1rem 0;
+	}
+	.courses-text {
+		padding: 1rem;
+	}
+	.thesis .section-right-column {
+		display: none;
+	}
+	.thesis .section-left-column {
+		display: block;
+		width: 100%;
+	}
+	.thesis .section-left-column h2, .thesis .section-left-column p {
+		display: none;
+	}
+	footer ul {
+		display: none;
+	}
+	footer p {
+		display: block;
+	}
+}

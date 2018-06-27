@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Colmar Academy</title>
+    <link rel="icon" href="resources/media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="resources/reset.css" />
     <link rel="stylesheet" type="text/css" href="resources/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
   </head>
 
   <body>
-  	
+
   	<!--Header-->
-  		
+
   		<header>
 
   			<div class="logo">
@@ -23,13 +25,18 @@
 
 			<nav>
 				<ul>
-					<li>On Campus</li>
-					<li>Online</li>
-					<li>For companies</li>
-					<li>Sign in</li>
+					<li><a href="#">On Campus</a></li>
+					<li><a href="#">Online</a></li>
+					<li><a href="#">For companies</a></li>
+					<li><a href="#">Sign in</a></li>
 				</ul>
 			</nav>
 
+      <nav class="mobile-nav">
+        <a href="#"><i class="fa fa-university fa-lg"></i></a>
+				<a href="#"><i class="fa fa-desktop fa-lg"></i></a>
+				<a href="#"><i class="fa fa-user fa-lg"></i></a>
+      </nav>
 
   		</header>
 
@@ -40,17 +47,17 @@
   		<!--Main Banner (Call to Action)-->
 
   			<div class="main-banner">
-	  			
+
 	  			<div class="banner-image">
 	  				<img src="resources/media/banner.jpg" alt="students learning outside" />
 	  			</div>
 
 	  			<div class="banner-text">
 
-	  				<h1>Learn something <br> new everyday</h1>
+	  				<h1>Learn something new everyday</h1>
 	  				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 
-	  				<p>Start here</p>
+	  				<a href="#">Start here</a>
 
 	  			</div>
 
@@ -59,20 +66,18 @@
   		<!--Practice/info section-->
 
 
-  			<div class="practice-info"> 
+  			<div class="practice-info">
 
   				<div class="section-left-column">
 
   					<img src="resources/media/information-main.jpg" alt="man reading" />
-  					
+
   					<h1>It doesn't hurt to keep practicing</h1>
-  					
+
   					<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  					consequat."</p>
 
   					<p class="quote-source">Emanuel, Sr Strategist at Hiring.com</p>
 
@@ -81,12 +86,13 @@
   				<div class="section-right-column">
 
   					<div class="right-column-item">
-  						
-  						
+
+
   						<div class="image-container">
-  							<img src="resources/media/information-orientation.jpg" alt="top view students walking"/>
+                <img class="image-standard" src="resources/media/information-orientation.jpg" alt="students walking" />
+                <img class="image-mobile" src="resources/media/information-orientation-mobile.jpg" alt="students walking" />
   						</div>
-  						
+
   						<div class="item-description">
 	  						<h2>Orientation Date</h2>
 	  						<p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -96,9 +102,10 @@
   					</div>
 
   					<div class="right-column-item">
-  						
+
   						<div class="image-container">
-  							<img src="resources/media/information-campus.jpg" alt="students sitting at table wood room with map"/>
+                <img class="image-standard" src="resources/media/information-campus.jpg" alt="students studying table" />
+                <img class="image-mobile" src="resources/media/information-campus-mobile.jpg" alt="students studying table" />
   						</div>
 
   						<div class="item-description">
@@ -110,10 +117,11 @@
   					</div>
 
   					<div class="right-column-item">
-  						
+
   						<div class="image-container">
-	  						<img src="resources/media/information-guest-lecture.jpg" alt="Oliver Sack"/>
-  						</div>	
+                <img class="image-standard" src="resources/media/information-guest-lecture.jpg" alt="Oliver Sack" />
+                <img class="image-mobile" src="resources/media/information-guest-lecture-mobile.jpg" alt="Oliver Sack" />
+  						</div>
 
   						<div class="item-description">
 	  						<h2>Our guest lecture</h2>
@@ -225,31 +233,32 @@
 
   				<div class="thesis-container">
 
-					<div class="section-left-column">
+  					<div class="section-left-column">
 
-	  					<video>
-	  						<source src="resources/media/thesis.mp4" type="video/mp4">
-	  						Your browser does not support the video tag.
-	  					</video>
+  	  					<video controls>
+  	  						<source src="resources/media/thesis.mp4" type="video/mp4">
+  	  						Your browser does not support the video tag.
+  	  					</video>
 
-	  					
-	  					<h2>Reimagine urban</h2>
-	  					
-	  					<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	  					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-  					</div>
+  	  					<h2>Reimagine urban</h2>
+
+  	  					<p class="quote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	  					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	  					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  	  					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  	  					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  	  					proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+    			  </div>
 
 	  				<div class="section-right-column">
 
 	  					<div class="right-column-item">
-	  						
+
 	  						<div class="image-container">
-	  							<img src="resources/media/thesis-fisma.jpg" alt="top view desk hand working"/>
+	  							<img class="thesis-image-standard" src="resources/media/thesis-fisma.jpg" alt="top view desk hand working"/>
+                  <img class="thesis-image-mobile" src="resources/media/thesis-fisma-mobile.jpg" alt="top view desk hand working" />
 	  						</div>
 
 	  						<div class="item-description">
@@ -260,11 +269,12 @@
 	  					</div>
 
 	  					<div class="right-column-item">
-	  						
+
 	  						<div class="image-container">
-	  							<img src="resources/media/thesis-now-and-then.jpg" alt="skyscrapers New York City"/>
+	  							<img class="thesis-image-standard" src="resources/media/thesis-now-and-then.jpg" alt="skyscrapers New York City"/>
+                  <img class="thesis-image-mobile" src="resources/media/thesis-now-and-then-mobile.jpg" alt="skyscrapers New York City" />
 	  						</div>
-	  						
+
 	  						<div class="item-description">
 		  						<h2>Now and then</h2>
 		  						<p>Research study about New York</p>
@@ -285,10 +295,10 @@
   		<footer>
 
   			<p>&copy; 2016 Colmar Academy. All rights reserved</p>
-  			
+
   			<ul>
-  				<li>Terms</li>
-  				<li>Privacy</li>
+  				<li><a href="#">Terms</a></li>
+  				<li><a href="#">Privacy</a></li>
   			</ul>
 
   		</footer>
